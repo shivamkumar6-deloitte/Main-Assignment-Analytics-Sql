@@ -35,3 +35,19 @@ models:
         tests:
           - unique
           - not_null
+  - name: milestone2_1
+    description: "calculating performance in the past year"
+    columns:
+      - name: code
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null          
+  - name: milestone2_3
+    description: "schemes that were discontinued after 2018"
+    columns:
+      - name: code
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
