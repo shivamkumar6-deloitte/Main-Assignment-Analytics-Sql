@@ -1,4 +1,4 @@
-select m.category_id,fc.category ,max(p.Performance) , min(p.Performance) 
+select m.category_id,fc.category ,max(p.Performance) as MaxPerformance , min(p.Performance) as MinPerformance 
 from "ANALYTICS"."MAINASSIGNEMT"."mutualfund" m,"ANALYTICS"."MAINASSIGNEMT"."fundcategory" fc,
 (select q2.code, q1.name ,  (q1.lastNav - q2.firstNav) as Performance  from
 (select  na.code,y.name, na.nav as lastNav  from {{ ref('timespan') }} y, "ANALYTICS"."MAINASSIGNEMT"."navhistory" na where na.nav_date = y.lastdate and y.code = na.code) q1 inner join 
