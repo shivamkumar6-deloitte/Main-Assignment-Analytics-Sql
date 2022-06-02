@@ -51,3 +51,6 @@ models:
         tests:
           - unique
           - not_null
+  - name: milestone2_4
+
+  - name: milestone2_5
