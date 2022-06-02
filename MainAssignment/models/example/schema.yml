@@ -1,0 +1,37 @@
+
+version: 2
+
+models:
+#   - name: my_first_dbt_model
+#     description: "A starter dbt model"
+#     columns:
+#       - name: id
+#         description: "The primary key for this table"
+#         tests:
+#           - unique
+#           - not_null
+
+#  - name: my_second_dbt_model
+#     description: "A starter dbt model"
+#     columns:
+#       - name: id
+#         description: "The primary key for this table"
+#         tests:
+#           - unique
+#           - not_null
+  - name: milestone1_1
+    description: "monthy_average, nav price"
+    columns:
+      - name: code
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: milestone1_2
+    description: "out each scheme’s Max and Min NAV value and Date it occurred"
+    columns:
+      - name: code
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
